@@ -17,6 +17,7 @@ Modified on:			2/25/2014
 #include <string>
 #include <iomanip>
 #include <cmath>
+#include "person.h"
 using namespace std;
 
 void choiceLists();
@@ -29,11 +30,10 @@ void factorials();
 void compoundInterest();
 void nestedLoops();
 void barCharts();
+void classFunction();
 
 int main()
 {
-	
-	
 	int choice = 0;
 	
 	cout << "Pick an Exercise: " << endl;
@@ -78,14 +78,16 @@ int main()
 			barCharts();
 			break;
 
+		case 10:
+			classFunction();
+
 		default:
 			break;
 		}
 	
 		cout << "\nChoose again!" << endl;
 		choiceLists();
-	}
-	
+	}	
 }
 
 void choiceLists()
@@ -99,6 +101,7 @@ void choiceLists()
 	cout << "7)\t5.11 Compound Interest" << endl;
 	cout << "8)\t5.12 Drawing Patterns with Nested `for` Loops" << endl;
 	cout << "9)\t5.13 Bar Charts" << endl;
+	cout << "10)\t Class Test" << endl;
 }
 
 void summingIntegers()
@@ -298,3 +301,11 @@ void barLooper(int bar)
 	cout << endl;
 
 }
+
+void classFunction()
+{
+	person Person1;
+	person Person2("Mike" , 35, 15, 50);
+
+
+}	
